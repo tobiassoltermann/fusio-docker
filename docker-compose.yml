@@ -5,7 +5,7 @@ services:
     image: fusio/fusio
     environment:
       FUSIO_PROJECT_KEY: "42eec18ffdbffc9fda6110dcc705d6ce"
-      FUSIO_HOST: "acme.com"
+      FUSIO_HOST: "localhost"
       FUSIO_ENV: "prod"
       FUSIO_DB_NAME: "fusio"
       FUSIO_DB_USER: "fusio"
@@ -36,7 +36,7 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     environment:
       MYSQL_ROOT_PASSWORD: "7f3e5186032a"
-      MYSQL_USER: "fusio"
+      MYSQL_USER: "fusio-user"
       MYSQL_PASSWORD: "61ad6c605975"
       MYSQL_DATABASE: "fusio"
     volumes:
